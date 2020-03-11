@@ -2,10 +2,11 @@
   "name": "yuitodoapi",
   "version": "1.0.0",
   "description": "API for Yui ToDo App",
-  "main": "server.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node index.js",
+    "build": "webpack"
   },
   "author": "Rob Ranf",
   "license": "ISC",
@@ -16,7 +17,9 @@
     "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "mongoose": "^5.9.2"
+    "mongoose": "^5.9.2",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
   },
   "repository": {
     "type": "git",
